@@ -231,8 +231,9 @@ st.markdown(
         margin-top: 20px;
     }
     </style>
-    <p class="footer-text">Made by Alishba Rehman 🚀</p>
+    <p class="footer-text">Made by Alishba Rehman </p>
     """,
     unsafe_allow_html=True
 )
+
 
