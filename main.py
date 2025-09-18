@@ -149,6 +149,7 @@
 
 
 
+
 import os
 import datetime
 import pandas as pd
@@ -216,8 +217,22 @@ if submitted:
         st.success("Lead saved successfully ✅")
 
 # --- Footer ---
-st.markdown("---")
+st.markdown("---", unsafe_allow_html=True)
 st.markdown(
-    "<p style='text-align: center; color: grey;'>Made by <b>Alishba Rehman</b></p>",
+    """
+    <style>
+    .footer-text {
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        background: linear-gradient(90deg, #ff6ec4, #7873f5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 20px;
+    }
+    </style>
+    <p class="footer-text">Made by Alishba Rehman 🚀</p>
+    """,
     unsafe_allow_html=True
 )
+
